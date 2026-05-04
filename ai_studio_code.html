@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>박이룸 | 콘텐츠로 꿈을 이루는 전문가</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Noto+Sans+KR:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- AOS Library for Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <style>
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            background-color: #0f172a; /* Midnight Blue */
+            color: #f1f5f9;
+            scroll-behavior: smooth;
+        }
+        .font-montserrat { font-family: 'Montserrat', sans-serif; }
+        .text-gold { color: #fbbf24; } /* Soft Gold */
+        .border-gold { border-color: #fbbf24; }
+        .bg-gold { background-color: #fbbf24; }
+        
+        /* Timeline line styling */
+        .timeline-line::before {
+            content: '';
+            position: absolute;
+            left: 20px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: #fbbf24;
+            opacity: 0.3;
+        }
+    </style>
+</head>
+<body class="overflow-x-hidden">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-slate-950/80 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold font-montserrat tracking-tighter text-gold">I-ROOM</div>
+            <div class="hidden md:flex space-x-8 text-sm font-medium">
+                <a href="#home" class="hover:text-gold transition">HOME</a>
+                <a href="#about" class="hover:text-gold transition">ABOUT</a>
+                <a href="#vision" class="hover:text-gold transition">VISION</a>
+                <a href="#roadmap" class="hover:text-gold transition">ROADMAP</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="h-screen flex items-center justify-center relative overflow-hidden">
+        <div class="absolute inset-0 z-0 opacity-20">
+            <img src="https://images.unsplash.com/photo-1485846234645-a62644f84728?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="Cinematic Background" class="w-full h-full object-cover">
+        </div>
+        <div class="relative z-10 text-center px-4" data-aos="fade-up" data-aos-duration="1500">
+            <h2 class="text-gold font-montserrat text-xl md:text-2xl mb-4 tracking-widest">CONTENT SPECIALIST</h2>
+            <h1 class="text-5xl md:text-8xl font-bold mb-6 leading-tight">
+                이름처럼 꿈을 <span class="text-gold italic">이룸</span>,<br>박이룸입니다.
+            </h1>
+            <p class="text-slate-400 text-lg md:text-xl max-w-2xl mx-auto font-light leading-relaxed">
+                중어중문학적 소양과 콘텐츠적 통찰력을 결합하여<br>
+                한국과 중국을 잇는 차세대 미디어 디렉터를 꿈꿉니다.
+            </p>
+            <div class="mt-10">
+                <a href="#about" class="px-8 py-3 border border-gold text-gold hover:bg-gold hover:text-slate-950 transition-all duration-300 rounded-full font-bold">더 알아보기</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 bg-slate-900">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div data-aos="fade-right">
+                    <h3 class="text-3xl font-bold mb-8 border-l-4 border-gold pl-4 text-white">PROFILE</h3>
+                    <div class="space-y-6 text-slate-300">
+                        <div class="flex justify-between border-b border-slate-800 pb-2">
+                            <span class="font-bold text-gold">NAME</span>
+                            <span>박이룸 (Park I-room)</span>
+                        </div>
+                        <div class="flex justify-between border-b border-slate-800 pb-2">
+                            <span class="font-bold text-gold">AGE / YEAR</span>
+                            <span>22세 / 3학년</span>
+                        </div>
+                        <div class="flex justify-between border-b border-slate-800 pb-2">
+                            <span class="font-bold text-gold">MAJOR</span>
+                            <span>중어중문학부</span>
+                        </div>
+                        <p class="pt-4 leading-relaxed">
+                            단순히 언어를 배우는 것을 넘어, 중국의 영화와 드라마 속에 녹아있는 문화적 코드를 분석하는 데 깊은 관심을 가지고 있습니다. 
+                            콘텐츠를 통해 국경을 넘는 감동을 전달하는 '미디어 가교'가 되는 것이 저의 목표입니다.
+                        </p>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-4" data-aos="fade-left">
+                    <div class="bg-slate-800 p-8 rounded-2xl text-center hover:bg-slate-700 transition">
+                        <span class="text-4xl block mb-4">🎬</span>
+                        <h4 class="font-bold text-white">드라마/영화</h4>
+                        <p class="text-sm text-slate-400 mt-2">트렌드 분석</p>
+                    </div>
+                    <div class="bg-slate-800 p-8 rounded-2xl text-center hover:bg-slate-700 transition">
+                        <span class="text-4xl block mb-4">✍️</span>
+                        <h4 class="font-bold text-white">로컬라이징</h4>
+                        <p class="text-sm text-slate-400 mt-2">자막 및 번역</p>
+                    </div>
+                    <div class="bg-slate-800 p-8 rounded-2xl text-center hover:bg-slate-700 transition">
+                        <span class="text-4xl block mb-4">🌏</span>
+                        <h4 class="font-bold text-white">비즈니스</h4>
+                        <p class="text-sm text-slate-400 mt-2">중국 현지 마켓</p>
+                    </div>
+                    <div class="bg-slate-800 p-8 rounded-2xl text-center hover:bg-slate-700 transition">
+                        <span class="text-4xl block mb-4">💡</span>
+                        <h4 class="font-bold text-white">IP 기획</h4>
+                        <p class="text-sm text-slate-400 mt-2">콘텐츠 창작</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Roadmap Section -->
+    <section id="roadmap" class="py-24">
+        <div class="max-w-4xl mx-auto px-6">
+            <h3 class="text-3xl font-bold mb-16 text-center text-white" data-aos="fade-up">FUTURE ROADMAP</h3>
+            
+            <div class="relative timeline-line space-y-12">
+                <!-- Phase 1 -->
+                <div class="relative pl-12" data-aos="fade-up">
+                    <div class="absolute left-0 top-0 w-10 h-10 bg-gold rounded-full flex items-center justify-center text-slate-950 font-bold z-10">1</div>
+                    <div class="bg-slate-900 border border-slate-800 p-8 rounded-2xl">
+                        <h4 class="text-gold font-bold text-xl mb-4">Phase 1. 전문성 구축 (현재 ~ 졸업)</h4>
+                        <ul class="space-y-3 text-slate-300 list-disc list-inside">
+                            <li>HSK 6급 고득점 및 비즈니스 회화(TSC 7급 이상) 취득</li>
+                            <li>중국 미디어 트렌드 분석 블로그 운영 (주 1회 리포트 발행)</li>
+                            <li>영상 번역 스터디를 통한 실무 로컬라이징 감각 습득</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Phase 2 -->
+                <div class="relative pl-12" data-aos="fade-up">
+                    <div class="absolute left-0 top-0 w-10 h-10 bg-gold rounded-full flex items-center justify-center text-slate-950 font-bold z-10">2</div>
+                    <div class="bg-slate-900 border border-slate-800 p-8 rounded-2xl">
+                        <h4 class="text-gold font-bold text-xl mb-4">Phase 2. 실무 현장 진입 (졸업 후 ~ 2년)</h4>
+                        <ul class="space-y-3 text-slate-300 list-disc list-inside">
+                            <li>중국 현지 미디어 기업 또는 국내 콘텐츠 수입사 인턴십</li>
+                            <li>OTT 판권 수급 및 저작권(Copyright) 실무 프로세스 체득</li>
+                            <li>샤오홍슈, 웨이보 등 현지 SNS 기반 마케팅 프로젝트 참여</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Phase 3 -->
+                <div class="relative pl-12" data-aos="fade-up">
+                    <div class="absolute left-0 top-0 w-10 h-10 bg-gold rounded-full flex items-center justify-center text-slate-950 font-bold z-10">3</div>
+                    <div class="bg-slate-900 border border-slate-800 p-8 rounded-2xl">
+                        <h4 class="text-gold font-bold text-xl mb-4">Phase 3. 글로벌 디렉터로 도약 (5년 후 ~)</h4>
+                        <ul class="space-y-3 text-slate-300 list-disc list-inside">
+                            <li>중국 방송국 또는 글로벌 OTT 오리지널 콘텐츠 기획 팀장</li>
+                            <li>한-중 공동 제작 프로젝트의 메인 프로듀서 활약</li>
+                            <li>양국의 장점을 결합한 글로벌 메가 히트 IP 탄생 주도</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 border-t border-slate-800 text-center">
+        <p class="text-slate-500 text-sm">© 2024 PARK I-ROOM. All dreams come true.</p>
+        <div class="mt-4 flex justify-center space-x-6 text-slate-400">
+            <span>Email: info@iroom.com</span>
+            <span>LinkedIn: @iroom_park</span>
+        </div>
+    </footer>
+
+    <script>
+        // AOS 애니메이션 초기화
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
+</body>
+</html>
